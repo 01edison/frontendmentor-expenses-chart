@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(27, 66%, 92%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  /* height: 70vh; */
+  width: 25rem;
+}
+
+.balance {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  background-color: hsl(10, 79%, 65%);
+}
+.balance p {
+  color: #fff;
+}
+.balance p:first-child {
+  margin-bottom: 0.7rem;
+  font-family: "DM Sans", sans-serif;
+}
+
+.balance-digits {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "DM Sans", sans-serif;
+  padding-left: 0.1rem;
+}
+
+.circles {
+  width: 25%;
+  display: flex;
+  align-items: center;
+}
+
+.circle {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.white-circle {
+  border: 1px solid white;
+  position: relative;
+  left: 18px;
+}
+
+.black-circle {
+  background-color: hsl(25, 47%, 15%);
+}
+
+.content {
+  padding: 2rem;
+  background-color: hsl(33, 100%, 98%);
+  border-radius: 1rem;
+}
+
+.content-heading {
+  font-size: 1.6rem;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  color: hsl(25, 47%, 15%);
+}
+
+.chart {
+  height: 27vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.chart div {
+  margin-left: auto;
+  margin-right: auto
+}
+
+.rectangle {
+  width: 30px;
+  height: 20px;
+  border-radius: 0.3rem;
+  background-color: hsl(10, 79%, 65%);
+}
+
+.rectangle:hover {
+  opacity: 0.5;
+  cursor: pointer;
+  transition: all .2s
+}
+
+.wed {
+  background-color: hsl(186, 34%, 60%);
+}
+
+.chart__day {
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  color: hsl(28, 10%, 53%);
+  margin-top: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+.chart__amount{
+  text-align: center;
+  background-color: hsl(25, 47%, 15%);
+  font-size: 12px;
+  color: #fff;
+  padding: .3rem;
+  margin-bottom: .4rem;
+  border-radius: .3rem;
+  visibility: hidden;
+  transition: all .1s
+}
+.total {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.total-heading {
+  font-size: 12px;
+}
+.total p {
+  font-family: "DM Sans", sans-serif;
+}
+
+.light-brown {
+  color: hsl(28, 10%, 53%);
+}
+
+.total-digits {
+  font-size: 1.9rem;
+  color: hsl(25, 47%, 15%);
+  font-weight: 700;
+}
+.percentage {
+  font-size: 12px;
+  position: relative;
+  top: 0.45rem;
+}
+.percentage-digits {
+  text-align: right;
+  color: hsl(25, 47%, 15%);
+  font-weight: 700;
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    padding: .5rem
+  }
+}

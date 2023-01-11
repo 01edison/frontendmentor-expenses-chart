@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" defer src="./script.js"></script>
+    <title>Frontend Mentor | Expenses chart component</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="balance">
+        <div>
+          <p>My balance</p>
+          <p class="balance-digits">$921.48</p>
+        </div>
+        <div class="circles">
+          <div class="white-circle circle"></div>
+          <div class="black-circle circle"></div>
+        </div>
+      </div>
+      <div class="content">
+        <p class="content-heading">Spending - Last 7 days</p>
+        <div class="chart">
+          <div>
+            <div class="chart__amount"></div>
+            <div class="rectangle mon"></div>
+            <div class="chart__day"></div>
+          </div>
+          <div>
+            <div class="chart__amount"></div>
+            <div class="rectangle tue"></div>
+            <div class="chart__day"></div>
+          </div>
+          <div>
+            <div class="chart__amount"></div>
+            <div class="rectangle wed"></div>
+            <div class="chart__day"></div>
+          </div>
+          <div>
+            <div class="chart__amount"></div>
+            <div class="rectangle thu"></div>
+            <div class="chart__day"></div>
+          </div>
+          <div>
+            <div class="chart__amount"></div>
+            <div class="rectangle fri"></div>
+            <div class="chart__day"></div>
+          </div>
+          <div>
+            <div class="chart__amount"></div>
+            <div class="rectangle sat"></div>
+            <div class="chart__day"></div>
+          </div>
+          <div>
+            <div class="chart__amount"></div>
+            <div class="rectangle sun"></div>
+            <div class="chart__day"></div>
+          </div>
+        </div>
+        <hr />
+        <div class="total">
+          <div>
+            <p class="light-brown total-heading">Total this month</p>
+            <p class="total-digits">$478.33</p>
+          </div>
+          <div class="percentage">
+            <p class="percentage-digits">+2.4%</p>
+            <p class="light-brown">from last month</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
